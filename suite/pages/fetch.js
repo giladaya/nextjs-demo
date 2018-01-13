@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import Layout from '../components/Layout'
 import Header from '../components/Header'
 import App from '../modules/app2'
-import styles from 'styles/app2.sass'
+import styles from 'styles/app2.scss'
 import fetch from 'isomorphic-unfetch'
 
 export default class About extends Component {
@@ -25,11 +26,12 @@ export default class About extends Component {
 
   render () {
     return (
-      <div className="wrapper">
-        <style dangerouslySetInnerHTML={{ __html: styles }} />
-        <Header />
-        <App stars={this.props.stars}/>
-      </div>
+      <Layout header={<Header />}>
+        <div className="wrapper">
+          <style dangerouslySetInnerHTML={{ __html: styles }} />
+          <App prefetchStars={this.props.stars}/>
+        </div>
+      </Layout>
     )
   }
 }

@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
+import Layout from '../components/Layout'
 
 export const IndexPage = () => (
-  <div>
-    <Header/>
+  <Layout header={<Header notificationsCount={5} user={{name: 'user1'}}/>}>
     <div>
-      This is an example from scoped style in a outside CSS file {'<3'}
+      This is the homepage
     </div>
-  </div>
+  </Layout>
 )
 
 export default IndexPage

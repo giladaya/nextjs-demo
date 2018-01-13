@@ -1,0 +1,18 @@
+.main_header_container {
+  background: #191;
+  color: white;
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.main_header_container .links_container {
+  float: left;
+}
+.main_header_container .links_container a:visited {
+  color: inherit;
+}
+
+.main_header_container .user_area_container {
+  float: right;
+}
