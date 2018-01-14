@@ -47,7 +47,6 @@ export default class Header extends React.Component {
         <div className="links_container">
           <Link href='/'><a style={linkStyle}>Home</a></Link>
           <Link href='/fetch'><a style={linkStyle}>Fetches</a></Link>
-          <Link href='/redux1'><a style={linkStyle}>Redux 1</a></Link>
           <Link href='/redux2'><a style={linkStyle}>Redux 2</a></Link>
         </div>
         <div className="user_area_container">

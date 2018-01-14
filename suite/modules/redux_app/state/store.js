@@ -2,15 +2,15 @@ import { createStore, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunkMiddleware from 'redux-thunk'
 
+export const actionTypes = {
+  ADD: 'ADD',
+  TICK: 'TICK'
+}
+
 const exampleInitialState = {
   lastUpdate: 0,
   light: false,
   count: 0
-}
-
-export const actionTypes = {
-  ADD: 'ADD',
-  TICK: 'TICK'
 }
 
 // REDUCERS

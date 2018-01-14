@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import Header from '../components/Header'
 import fetch from 'isomorphic-unfetch'
 import Router from 'next/router'
-import App from '../modules/app1'
-import styles from 'styles/app1.sass'
+import App from '../modules/redux_app'
+import styles from 'styles/app1.scss'
 import withRedux from 'next-redux-wrapper'
-import { initStore } from '../modules/app1/state/store'
+import { initStore } from '../modules/redux_app/state/store'
 
 class Redux extends Component {
 

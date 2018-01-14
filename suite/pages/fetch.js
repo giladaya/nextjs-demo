@@ -1,15 +1,11 @@
 import React, { Component } from 'react'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
-import App from '../modules/app2'
+import App from '../modules/fetch_app'
 import styles from 'styles/app2.scss'
 import fetch from 'isomorphic-unfetch'
 
 export default class About extends Component {
-  static defaultProps = {
-    stars: 2222,
-  }
-
   static async getInitialProps () {
     console.log('getInitialProps for About page')
     // eslint-disable-next-line no-undef
@@ -19,7 +15,7 @@ export default class About extends Component {
     console.log('waiting...');
     // add delay
     await new Promise((resolve) => {
-      setTimeout(resolve, 3000)
+      setTimeout(resolve, 1000)
     })
     return { stars: json.stargazers_count }
   }

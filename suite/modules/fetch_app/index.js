@@ -6,7 +6,7 @@ async function fetchData() {
   const res = await fetch('https://api.github.com/repos/facebook/react')
   const json = await res.json()
   await new Promise((resolve) => {
-    setTimeout(resolve, 500)
+    setTimeout(resolve, 1000)
   })
   return {
     onmountStars: json.stargazers_count
