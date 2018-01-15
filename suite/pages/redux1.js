@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from '../components/Header'
+import Header from '../common-components/Header'
 import fetch from 'isomorphic-unfetch'
 import Router from 'next/router'
 import App from '../modules/redux_app'

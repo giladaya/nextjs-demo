@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Layout from '../components/Layout'
-import Header from '../components/Header'
+import Layout from '../common-components/Layout'
+import Header from '../common-components/Header'
 import App from '../modules/redux_app2'
 import styles from 'styles/app1.scss'
 import withRedux from 'next-redux-wrapper'

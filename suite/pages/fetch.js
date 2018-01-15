@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Layout from '../components/Layout'
-import Header from '../components/Header'
+import Layout from '../common-components/Layout'
+import Header from '../common-components/Header'
 import App from '../modules/fetch_app'
 import styles from 'styles/app2.scss'
 import fetch from 'isomorphic-unfetch'

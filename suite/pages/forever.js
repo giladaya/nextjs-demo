@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from '../components/Header'
+import Header from '../common-components/Header'
 
 export default class Forever extends Component {
   // Add some delay
